@@ -7,6 +7,7 @@ public class tp1 {
     public static int calculerAgeFuture(int age) {
         return age + 10;
     }
+    //jghfjhd
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
