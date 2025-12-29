@@ -10,7 +10,6 @@ public class tp1 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        //jgdhjfehjzgdhj
 
         System.out.print("دخل الاسم ديالك: ");
         String nom = sc.nextLine();
