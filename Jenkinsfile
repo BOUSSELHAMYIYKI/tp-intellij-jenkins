@@ -23,11 +23,10 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'mvn -B test'
+                sh 'mvn test -B'
             }
             post {
                 always {
-                    // Publie les rapports de tests JUnit
                     junit '**/target/surefire-reports/*.xml'
                 }
             }
