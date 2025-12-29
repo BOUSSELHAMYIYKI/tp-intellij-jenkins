@@ -3,8 +3,12 @@ package org.example;
 import java.util.Scanner;
 
 public class tp1 {
-    public static void main(String[] args) {
 
+    public static int calculerAgeFuture(int age) {
+        return age + 10;
+    }
+
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("دخل الاسم ديالك: ");
@@ -13,7 +17,7 @@ public class tp1 {
         System.out.print("دخل العمر ديالك: ");
         int age = sc.nextInt();
 
-        int ageFuture = age + 10;
+        int ageFuture = calculerAgeFuture(age);
 
         System.out.println("مرحبا " + nom);
         System.out.println("العمر ديالك دابا: " + age);
