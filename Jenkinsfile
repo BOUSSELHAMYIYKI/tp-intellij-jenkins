@@ -58,10 +58,10 @@ pipeline {
 
     post {
         success {
-            echo "✅ Déploiement local terminé"
+            echo "✅ Pipeline completed and deployment finished successfully!"
         }
         failure {
-            echo "❌ Erreur dans le pipeline"
+            echo "❌ Pipeline failed!"
         }
     }
 }
