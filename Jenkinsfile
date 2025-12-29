@@ -4,7 +4,7 @@ pipeline {
  IMAGE_NAME = "tp3-java-app:latest"
  CONTAINER_NAME = "tp3-java-container"
  HOST_PORT = "8081"
- CONTAINER_PORT = "8080"
+ CONTAINER_PORT = "8081"
  }
  stages {
  stage('Checkout') {
