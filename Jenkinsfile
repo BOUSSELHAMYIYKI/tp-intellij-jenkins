@@ -21,16 +21,17 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                sh 'mvn test -B'
-            }
-            post {
-                always {
-                    junit '**/target/surefire-reports/*.xml'
-                }
-            }
-        }
+    stage('Test') {
+       steps {
+           sh 'mvn clean test -B -DfailIfNoTests=false'
+       }
+       post {
+           always {
+               junit '**/target/surefire-reports/*.xml'
+           }
+       }
+   }
+
 
         stage('Docker Build') {
             steps {
